@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sony WH-1000XM6 | Silence, Perfected.</title>
+  <!-- Google Fonts - Inter and Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+  <!-- Translucent Glassmorphic Navbar -->
+  <nav id="apple-nav">
+    <div class="nav-content">
+      <div class="nav-left">
+        <a href="#" class="nav-logo">SONY</a>
+        <span class="product-title">WH-1000XM6</span>
+      </div>
+      <div class="nav-center">
+        <a href="#overview" class="nav-link active">Overview</a>
+        <a href="#technology" class="nav-link">Technology</a>
+        <a href="#anc" class="nav-link">Noise Cancelling</a>
+        <a href="#specs" class="nav-link">Specs</a>
+        <a href="#buy" class="nav-link">Buy</a>
+      </div>
+      <div class="nav-right">
+        <a href="#preorder" class="nav-cta">Pre-order</a>
+      </div>
+    </div>
+    <!-- Subtle Scroll Progress Indicator -->
+    <div id="scroll-progress-bar"></div>
+  </nav>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-content">
+      <h2 class="loader-logo">SONY</h2>
+      <div class="spinner-container">
+        <div class="spinner"></div>
+      </div>
+      <p class="loader-status">Assembling components... <span id="load-percentage">0%</span></p>
+    </div>
+  </div>
+
+  <!-- Audio Experience Sound Toggle -->
+  <div id="sound-toggle" class="hidden">
+    <button aria-label="Toggle ambient soundtrack">
+      <span class="sound-wave">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </span>
+      <span class="sound-text">SOUND ON</span>
+    </button>
+  </div>
+
+  <!-- Scroll Container -->
+  <main id="scrolly-container">
+    <!-- Pinned Sticky Canvas Wrapper -->
+    <div class="canvas-sticky-wrapper">
+      <div class="canvas-container">
+        <canvas id="scrolly-canvas"></canvas>
+        <div class="canvas-glow"></div>
+      </div>
+
+      <!-- Storytelling Overlays (Float over the Canvas) -->
+      <div class="overlays-container">
+        
+        <!-- Beat 1: Intro (0% - 15%) -->
+        <section id="beat-intro" class="story-beat active text-center">
+          <div class="beat-inner">
+            <span class="tagline-highlight">FLAGSHIP WIRELESS NOISE CANCELLING</span>
+            <h1 class="hero-title">Sony WH‑1000XM6</h1>
+            <p class="hero-subtitle">Silence, perfected.</p>
+            <p class="hero-desc">
+              Re-engineered for a world that never stops. Experience sound in its purest, most absolute form.
+            </p>
+            <div class="scroll-prompt">
+              <span class="arrow-down"></span>
+              <p>Scroll to disassemble</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Beat 2: Engineering Reveal (15% - 40%) -->
+        <section id="beat-engineering" class="story-beat text-left-side">
+          <div class="beat-inner">
+            <span class="tagline-highlight">ACOUSTIC ARCHITECTURE</span>
+            <h2 class="section-title">Precision-engineered<br>for silence.</h2>
+            <p class="section-desc">
+              Custom-developed 40mm dome drivers, sealed air-tight chambers, and aerodynamic airflow channels deliver studio-grade acoustic clarity.
+            </p>
+            <p class="section-subdesc">
+              Every curve, chamber, and micro-vent is structurally optimized to balance internal air pressure and deliver visceral, distortion-free sub-bass.
+            </p>
+            
+            <div class="tech-spec-grid">
+              <div class="tech-spec-card">
+                <span class="card-num">40<sub>mm</sub></span>
+                <span class="card-label">Bio-cellulose Driver</span>
+              </div>
+              <div class="tech-spec-card">
+                <span class="card-num">3D</span>
+                <span class="card-label">Airflow Geometry</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Beat 3: Noise Cancelling & Microphones (40% - 65%) -->
+        <section id="beat-anc" class="story-beat text-right-side">
+          <div class="beat-inner">
+            <span class="tagline-highlight">SENSORY ISOLATION</span>
+            <h2 class="section-title">Adaptive cancellation.<br>Redefined.</h2>
+            <p class="section-desc">
+              Powered by dual-chip architecture (Sony V2 & QN2), our custom neural networks analyze your environment 700 times per second to silence the noise.
+            </p>
+            
+            <ul class="anc-features-list">
+              <li>
+                <span class="feature-title">8 Microphones Array</span>
+                <span class="feature-text">Hyper-focused spatial pickup filters out wind and crowd chatter.</span>
+              </li>
+              <li>
+                <span class="feature-title">Auto-Adaptive ANC</span>
+                <span class="feature-text">AI detects atmospheric pressure and adjusts cancellation instantly.</span>
+              </li>
+              <li>
+                <span class="feature-title">Speak-to-Chat 2.0</span>
+                <span class="feature-text">Speeds up vocal transparency the moment you start speaking.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Beat 4: Sound & Upscaling (65% - 85%) -->
+        <section id="beat-sound" class="story-beat text-left-side">
+          <div class="beat-inner">
+            <span class="tagline-highlight">AUDIOPHILE HERITAGE</span>
+            <h2 class="section-title">Immersive, lifelike sound.</h2>
+            <p class="section-desc">
+              LDAC transmits three times more data than conventional audio for wireless high-resolution playback. Restores detail lost in compression.
+            </p>
+            <p class="section-subdesc">
+              AI-driven DSEE Extreme™ upscales compressed digital music files in real-time, dynamically recognizing instrumentation, genres, and individual song elements to restore high-range sound.
+            </p>
+            
+            <div class="audio-badges">
+              <div class="badge">Hi-Res Audio Wireless</div>
+              <div class="badge">LDAC</div>
+              <div class="badge">360 Reality Audio</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Beat 5: Reassembly & CTA (85% - 100%) -->
+        <section id="beat-cta" class="story-beat text-center">
+          <div class="beat-inner">
+            <span class="tagline-highlight">THE NEW BENCHMARK</span>
+            <h2 class="hero-title">Hear everything.<br>Feel nothing else.</h2>
+            <p class="hero-desc max-w-md">
+              WH-1000XM6. Designed for focus, crafted for comfort. 45 hours of battery life with ultra-fast Type-C charging.
+            </p>
+            
+            <div class="cta-actions">
+              <a href="#preorder" class="cta-primary-btn">Pre-order WH-1000XM6</a>
+              <a href="#specs" class="cta-secondary-link">See full specifications <span class="arrow-right">→</span></a>
+            </div>
+            
+            <p class="micro-copy">
+              Available in Matte Black, Platinum Silver, and Midnight Navy. Ships Fall 2026.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Interactive Specs Modal / Section -->
+  <section id="specs-section">
+    <div class="specs-content">
+      <h3 class="specs-heading">Technical Specifications</h3>
+      <div class="specs-grid">
+        <div class="spec-row">
+          <span class="spec-name">Processor</span>
+          <span class="spec-val">Sony Integrated Processor V2 & HD Noise Cancelling Processor QN2</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-name">Driver Unit</span>
+          <span class="spec-val">40mm, dome type (CCAW Voice Coil) bio-cellulose diaphragm</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-name">Frequency Response</span>
+          <span class="spec-val">4 Hz - 40,000 Hz (JEITA)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-name">Connectivity</span>
+          <span class="spec-val">Bluetooth® 5.4, Multipoint connection (up to 3 devices simultaneously)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-name">Battery Life</span>
+          <span class="spec-val">Up to 45 hours (ANC ON), Up to 60 hours (ANC OFF)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-name">Quick Charging</span>
+          <span class="spec-val">3 minutes charge provides up to 5 hours of playback</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p class="copyright">© 2026 Sony Electronics Inc. All rights reserved. WH-1000XM6 is a simulated concept design.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Background Ambient Audio -->
+  <audio id="ambient-audio" loop preload="auto">
+    <source src="https://assets.mixkit.co/active_storage/sfx/123/123-200.wav" type="audio/wav">
+  </audio>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
